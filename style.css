@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&display=swap');
+
+body {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  animation-name: fadeInup;
+}
+
+* {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+
+#bodyBackground {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  position: relative;
+  background: white;
+  background-image: radial-gradient(blue 1px, transparent 0);
+  background-size: 40px 40px;
+  
+}
+
+.boxParagraph {
+  margin-top: 20px;
+}
+
+.top {
+  display: inline-block;
+  margin: 15px;
+  padding: 30px;
+  box-shadow: 2px 2px 15px #00a9ff;
+  border-radius: 15px;
+  background-color: white;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-timing-function: steps(1, 15);
+  transition: transform .2s;
+}
+
+
+#main {
+  width: 570px;
+}
+
+#aboutMe {
+  width: 500px;
+}
+
+.occupationLine {
+  border: 0.1px solid blue;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 170px;
+}
+
+#occupationLine2 {
+  margin-top: 25px;
+}
+
+#cursor {
+  animation: blink 5s step-end infinite;
+  display:inline-block;
+  background: blue;
+  margin-left: 4px;
+  width: 3px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+img {
+  border-radius: 15px;
+  transition: transform .1s;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+#aboutBig {
+  margin-bottom: 0;
+}
+
+button {
+  height: 35px;
+  width: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: white;
+  border: solid 2px;
+  border-color: blue;
+}
+
+.buttons {
+  background-color: #00a9ff;
+  box-shadow: 2px 2px 15px #00a9ff;
+  padding: 12px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #00a9ff;
+  border-color: #00f3ff;
+  box-shadow: 2px 2px 15px #00f3ff;
+  color: white;
+}
+
+#socials {
+  color: white;
+  font-size: 16px;
+}
+
+#typewriter {
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(35, end) 1.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 13em }
+}
+
+h1 {
+  line-height: 10px;
+  color: blue;
+}
+
+h2 {
+  color: black;
+  font-size: 40px;
+  line-height: 10px;
+  padding-top: 0px;
+  margin-top: 0;
+  white-space: nowrap;
+  animation-name: fadeInUp;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from { transform: translate3d(0, 30px, 0) }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@keyframes fadeInDown {
+  from { transform: translate3d(0, -30px, 0) }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+#profilepic {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 300px;
+  width: 380px;
+  background-color: #00a9ff;
+  box-shadow: 2px 2px 15px #00a9ff;
+  border-radius: 15px;
+}
+
+.fadeIn1 {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 0.3s;
+  animation-timing-function: steps(1, 15);
+}
+
+.fadeIn2 {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 2.7s;
+  animation-timing-function: steps(1, 15);
+}
+
+#email {
+  color: white;
+  font-size: 16px;
+}
+
+p {
+  font-size: 18px;
+}
